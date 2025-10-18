@@ -1,0 +1,134 @@
+"use client";
+
+import { useState } from "react";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Box,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { NoSsr } from "@mui/material";
+
+// Navigation items
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
+
+export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"), {
+    defaultMatches: true,
+    noSsr: true,
+  });
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  // Drawer component for mobile view
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", width: 250 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          p: 2,
+        }}
+      >
+        <Typography variant="h6" component="div">
+          Classic Cuts
+        </Typography>
+        <IconButton onClick={handleDrawerToggle}>
+          <CloseIcon />
+        </IconButton>
+      </Box>
+      <List>
+        {navItems.map((item) => (
+          <ListItem
+            key={item.label}
+            component="a"
+            href={item.href}
+            disablePadding
+          >
+            <ListItemText
+              primary={item.label}
+              sx={{ textAlign: "center", px: 2 }}
+            />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  return (
+    <>
+      <NoSsr>
+        <AppBar position="fixed" sx={{ zIndex: theme.zIndex.drawer + 1 }}>
+          <Toolbar>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, fontWeight: 700, fontSize: "1.5rem" }}
+            >
+              Classic Cuts
+            </Typography>
+
+            {/* Desktop Navigation - hidden on mobile */}
+            <Box sx={{ display: { xs: "none", md: "block" } }}>
+              {navItems.map((item) => (
+                <IconButton
+                  key={item.label}
+                  color="inherit"
+                  component="a"
+                  href={item.href}
+                  sx={{ mx: 1 }}
+                >
+                  {item.label}
+                </IconButton>
+              ))}
+            </Box>
+
+            {/* Mobile menu button - hidden on desktop */}
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ display: { xs: "block", md: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+
+        {/* Mobile drawer */}
+        <Drawer
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{ keepMounted: true }}
+          sx={{
+            display: { xs: "block", md: "none" },
+            "& .MuiDrawer-paper": { boxSizing: "border-box", width: 250 },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </NoSsr>
+    </>
+  );
+}
