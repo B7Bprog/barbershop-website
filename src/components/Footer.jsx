@@ -21,12 +21,10 @@ export default function Footer() {
             gap: 2,
           }}
         >
-          {/* Branding */}
           <Typography variant="h6" component="div" sx={{ fontWeight: 700 }}>
             Classic Cuts
           </Typography>
 
-          {/* Copyright */}
           <Typography
             variant="body2"
             sx={{ textAlign: { xs: "center", md: "left" } }}
@@ -35,7 +33,6 @@ export default function Footer() {
             reserved.
           </Typography>
 
-          {/* Quick Links */}
           <Box sx={{ display: "flex", gap: 3 }}>
             <Link
               href="/privacy"

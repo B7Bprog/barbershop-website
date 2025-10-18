@@ -18,7 +18,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { NoSsr } from "@mui/material";
 
-// Navigation items
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
@@ -38,7 +37,6 @@ export default function Header() {
     setMobileOpen(!mobileOpen);
   };
 
-  // Drawer component for mobile view
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", width: 250 }}>
       <Box
@@ -87,7 +85,6 @@ export default function Header() {
               Classic Cuts
             </Typography>
 
-            {/* Desktop Navigation - hidden on mobile */}
             <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
                 <IconButton
@@ -102,7 +99,6 @@ export default function Header() {
               ))}
             </Box>
 
-            {/* Mobile menu button - hidden on desktop */}
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -115,7 +111,6 @@ export default function Header() {
           </Toolbar>
         </AppBar>
 
-        {/* Mobile drawer */}
         <Drawer
           variant="temporary"
           open={mobileOpen}

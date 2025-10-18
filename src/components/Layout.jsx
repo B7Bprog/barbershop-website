@@ -23,7 +23,7 @@ export default function Layout({ children }) {
             component="main"
             sx={{
               minHeight: "100vh",
-              pt: "80px", // Adjust this value based on your header height
+              pt: "80px",
               display: "flex",
               flexDirection: "column",
             }}
