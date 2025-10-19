@@ -1,4 +1,6 @@
-import { Box, Typography, Button, Container, Stack, Card } from "@mui/material";
+import { Box, Typography, Button, Container, Stack } from "@mui/material";
+import ContentCutIcon from "@mui/icons-material/ContentCut";
+import FeatureCard from "@/components/FeatureCard";
 
 export default function Home() {
   return (
@@ -31,6 +33,12 @@ export default function Home() {
           </Stack>
         </Container>
       </Box>
+
+      <FeatureCard
+        icon={<ContentCutIcon sx={{ fontSize: 48, color: "primary.main" }} />}
+        title="Haircut"
+        description="Our signature haircut includes precise scissor work, styling, and finishing touches."
+      ></FeatureCard>
     </>
   );
 }

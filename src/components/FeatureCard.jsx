@@ -1,0 +1,16 @@
+import { Card, Typography } from "@mui/material";
+
+export default function FeatureCard({ icon, title, description, children }) {
+  return (
+    <Card sx={{ textAlign: "center", p: 2 }}>
+      {icon}
+      <Typography variant="h4" gutterBottom>
+        {title}
+      </Typography>
+      <Typography variant="h5" color="text.secondary">
+        {description}
+      </Typography>
+      {children}
+    </Card>
+  );
+}
