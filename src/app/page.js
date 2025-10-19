@@ -45,7 +45,7 @@ export default function Home() {
       </Box>
       <Box sx={{ my: 3 }}>
         <Typography variant="h2" textAlign="center" gutterBottom>
-          Our Services
+          Services
         </Typography>
         <Typography variant="h6" textAlign="center" color="text.secondary">
           Premium Grooming Experiences

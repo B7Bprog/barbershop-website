@@ -1,6 +1,12 @@
-import { Card, Typography } from "@mui/material";
+import { Box, Card, Typography } from "@mui/material";
 
-export default function ServicesCard({ icon, title, description, children }) {
+export default function ServicesCard({
+  icon,
+  title,
+  description,
+  childrenSx,
+  children,
+}) {
   return (
     <Card sx={{ textAlign: "center", p: 2 }}>
       {icon}
@@ -10,7 +16,7 @@ export default function ServicesCard({ icon, title, description, children }) {
       <Typography variant="h5" color="text.secondary">
         {description}
       </Typography>
-      {children}
+      <Box sx={{ ...childrenSx }}>{children}</Box>
     </Card>
   );
 }
