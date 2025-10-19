@@ -1,6 +1,6 @@
 import { Card, Typography } from "@mui/material";
 
-export default function FeatureCard({ icon, title, description, children }) {
+export default function ServicesCard({ icon, title, description, children }) {
   return (
     <Card sx={{ textAlign: "center", p: 2 }}>
       {icon}
