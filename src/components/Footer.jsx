@@ -7,7 +7,7 @@ export default function Footer() {
       sx={{
         backgroundColor: "primary.main",
         color: "white",
-        py: 4,
+        py: 1,
         mt: "auto",
       }}
     >
@@ -18,7 +18,7 @@ export default function Footer() {
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: "center",
-            gap: 2,
+            gap: 1,
           }}
         >
           <Typography variant="h6" component="div" sx={{ fontWeight: 700 }}>
