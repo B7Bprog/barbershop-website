@@ -61,10 +61,23 @@ export default function Header() {
             component="a"
             href={item.href}
             disablePadding
+            sx={{
+              textAlign: "center",
+              "&:hover": { backgroundColor: "rgba(0,0,0,0.04)" },
+            }}
           >
             <ListItemText
               primary={item.label}
-              sx={{ textAlign: "center", px: 2 }}
+              slotProps={{
+                primary: {
+                  variant: "h6",
+                  fontWeight: 500,
+                  sx: {
+                    color: "text.primary",
+                    textDecoration: "none",
+                  },
+                },
+              }}
             />
           </ListItem>
         ))}
