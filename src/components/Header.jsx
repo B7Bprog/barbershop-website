@@ -70,11 +70,12 @@ export default function Header() {
               primary={item.label}
               slotProps={{
                 primary: {
-                  variant: "h6",
+                  variant: "h3",
                   fontWeight: 500,
                   sx: {
                     color: "text.primary",
                     textDecoration: "none",
+                    p: 1,
                   },
                 },
               }}
