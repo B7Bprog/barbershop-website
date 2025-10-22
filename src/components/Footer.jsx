@@ -33,7 +33,7 @@ export default function Footer() {
             reserved.
           </Typography>
 
-          <Box sx={{ display: "flex", gap: 3 }}>
+          <Box sx={{ display: "flex", gap: 3, pb: 2 }}>
             <Link
               href="/privacy"
               color="inherit"
