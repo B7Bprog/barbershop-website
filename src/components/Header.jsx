@@ -17,6 +17,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { NoSsr } from "@mui/material";
+import Link from "next/link";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -93,8 +94,15 @@ export default function Header() {
           <Toolbar>
             <Typography
               variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, fontWeight: 700, fontSize: "1.5rem" }}
+              component={mobileOpen ? "div" : Link}
+              href={mobileOpen ? undefined : "/"}
+              sx={{
+                flexGrow: 1,
+                fontWeight: 700,
+                fontSize: "1.5rem",
+                textDecoration: "none",
+                color: "inherit",
+              }}
             >
               Classic Cuts
             </Typography>
