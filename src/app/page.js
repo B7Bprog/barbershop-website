@@ -23,9 +23,19 @@ export default function Home() {
           height: "60vh",
           display: "flex",
           alignItems: "center",
+          position: "relative",
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0,0,0,0.2)",
+          },
         }}
       >
-        <Container>
+        <Container sx={{ position: "relative", zIndex: 1 }}>
           <Stack
             alignItems="center"
             justifyContent="center"
@@ -33,10 +43,18 @@ export default function Home() {
             spacing={7}
             sx={{ height: "100%" }}
           >
-            <Typography variant="h1" color="white">
+            <Typography
+              variant="h1"
+              color="white"
+              sx={{ textShadow: "0 4px 12px rgba(0,0,0,0.8)" }}
+            >
               Precision Cuts, Timeless Style
             </Typography>
-            <Typography variant="h5" color="white">
+            <Typography
+              variant="h5"
+              color="white"
+              sx={{ textShadow: "0 4px 12px rgba(0, 0, 0, 0.8)" }}
+            >
               Where classic barbering meets modern grooming
             </Typography>
             <Button variant="contained">Book Now</Button>
