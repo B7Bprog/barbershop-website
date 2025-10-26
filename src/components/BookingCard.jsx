@@ -1,4 +1,5 @@
 import { Card, Typography, Button } from "@mui/material";
+import Booker from "./Booker";
 
 export default function BookingCard({ title }) {
   return (
@@ -9,6 +10,7 @@ export default function BookingCard({ title }) {
       <Button variant="contained" size="large">
         Book Now
       </Button>
+      {/* <Booker username="bela-bertalan-ccy0hu" eventSlug="30min" /> */}
     </Card>
   );
 }
