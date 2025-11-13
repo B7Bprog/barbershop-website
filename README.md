@@ -12,7 +12,7 @@ _Note: This repository contains a template with placeholder content. The live de
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-deployment-link.vercel.app) _[Replace with your actual Vercel/Netlify link]_
+[View Live Demo](https://) _[Coming up!]_
 
 ## ✨ Designed For Growth
 
@@ -52,7 +52,7 @@ This template is the foundation. I provide a complete service to transform it in
 - **Booking System Integration:** Connect your preferred booking API (e.g., Calendly, Square).
 - **Deployment & Training:** I handle everything from launch to showing you how to make simple updates.
 
-**Interested in your own custom website?** [Contact Me](mailto:your.email@example.com) for a consultation and quote.
+**Interested in your own custom website?** [Contact Me](https://www.linkedin.com/in/belabertalan/) for a consultation and quote.
 
 ---
 
@@ -91,10 +91,34 @@ This project serves as a public portfolio piece, showcasing my ability to build 
 
 ## 📄 License
 
-This template is available for portfolio and learning purposes. The code is open-source under the MIT license. However, the design and concept are the property of the developer. Commercial use or redistribution of the direct design is not permitted without permission.
+This project’s source code is available under the MIT License for learning and personal project use.
+However, the visual design, layout, content, and overall concept remain the intellectual property of the developer.
+
+You may:
+
+- Use part of the code for educational purposes or personal projects.
+
+- Reference it as inspiration for your own portfolio.
+
+You may **NOT**:
+
+- Reproduce, redistribute, or resell this design, layout, or branding in any commercial project without explicit written permission.
+
+- Present this design or derivative works as your own portfolio template.
+
+© All rights reserved.
+
+---
+
+### Disclaimer:
+
+The profiles, names, and images shown on this website are fictitious and used solely for demonstration purposes. Any resemblance to real persons, living or dead, is purely coincidental.
+All images used are license-free and sourced from open platforms such as Unsplash
+, Pexels
+, or similar, in accordance with their respective licenses.
 
 ---
 
 **Let's build something great together.**
 
-[Contact Me](mailto:your.email@example.com) | [LinkedIn](https://www.linkedin.com/in/your-profile/) | [Portfolio](https://your-portfolio-link.com)
+[Contact Me](https://www.linkedin.com/in/belabertalan/) | [LinkedIn](https://www.linkedin.com/in/belabertalan/) | [Portfolio](https://)
