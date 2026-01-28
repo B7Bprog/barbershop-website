@@ -12,7 +12,7 @@ _Note: This repository contains a template with placeholder content. The live de
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://) _[Coming up!]_
+[View Live Demo](https://belabarbershop.netlify.app/) _[Mobile view only for now!]_
 
 ## ✨ Designed For Growth
 
